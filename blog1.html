@@ -43,7 +43,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container">
 
-            <a class="navbar-brand font-weight-bold animate__animated animate__rubberBand animate__delay-1s"
+            <a class="navbar-brand font-weight-bold animate__animated animate__rubberBand animate__slow animate__repeat-2"
                 href="./index.html">THE
                 XLOG</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -52,10 +52,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link {{ activate_blog }}" href="./blog1.html">BLOG <span
+                    <a class="nav-item nav-link active" href="./blog1.html">BLOG <span
                             class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link pl-md-4" href="./register.html">REGISTER</a>
-                    <a class="nav-item nav-link pl-md-4 {{ activate_login }}" href="./login.html">LOGIN</a>
+                    <a class="nav-item nav-link pl-md-4 hvr-bounce-in" href="./register.html">REGISTER</a>
+                    <a class="nav-item nav-link pl-md-4 hvr-bounce-in" href="./login.html">LOGIN</a>
                 </div>
             </div>
         </div>
@@ -78,7 +78,8 @@
             </div>
         </div>
         <!-- Search form -->
-        <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="margin-bottom: 2rem;">
+        <input class="form-control" type="text" placeholder="Search articles here..." aria-label="Search"
+            style="margin-bottom: 2rem;">
         <div id="articals">
             <article class="media content-section shadow mb-5" data-aos="fade-up"
                 data-aos-anchor-placement="center-bottom" data-aos-delay="100">

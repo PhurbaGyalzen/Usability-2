@@ -21,24 +21,25 @@
   <!-- Style -->
   <link rel="stylesheet" href="./login/css/style.css">
 
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+
   <title>Login to THE XLOG</title>
 </head>
 
 <body>
 
-
   <div class="content">
     <div class="container">
       <div class="row">
-        <div class="col-md-6" data-aos="fade-right">
+        <div class="col-md-6 mb-5" data-aos="fade-right">
           <img src="./login/images/login.svg" alt="Image" class="img-fluid">
         </div>
         <div class="col-md-6 contents" data-aos="fade-left">
           <div class="row justify-content-center">
             <div class="col-md-8">
               <div class="mb-4">
-                <h3>LOGIN TO THE XLOG</h3>
-                <p class="mb-4">Let's login...</p>
+                <h3 class="font-weight-bold">LOGIN TO THE XLOG</h3>
+                <p class="mb-4">Welcome to the xlog</p>
               </div>
               <form action="#" method="post">
                 <div class="form-group first">
@@ -60,7 +61,8 @@
                   <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
                 </div>
 
-                <input type="submit" value="Log In" class="btn btn-block btn-primary">
+                <audio src="audio/click.wav" id="audio"></audio>
+                <button type="button" class="btn btn-block btn-primary play-sound-btn">Log In</button>
 
                 <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>
 
@@ -97,6 +99,7 @@
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./login/js/main.js"></script>
+  <script src="./js/sound.js"></script>
 
   <script>
     // Init AOS
