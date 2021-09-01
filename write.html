@@ -41,6 +41,8 @@
 
     <link href="./blog/css/blog.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/classic/ckeditor.js"></script>
+
 </head>
 
 <body>
@@ -62,7 +64,7 @@
                         <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
                             aria-label="Search">
                     </form>
-                    <a class="nav-item nav-link pl-md-4 mr-2 hvr-bounce-in" href="./write.html"><i title="write"
+                    <a class="nav-item nav-link pl-md-4 mr-2 active" href="#"><i title="write"
                             class="fas fa-pen-square"></i></a>
                     <a class="nav-item nav-link mr-2 hvr-bounce-in" href="./bookmarks.html"><i title="bookmarks"
                             class="fas fa-bookmark"></i></a>
@@ -77,7 +79,7 @@
                         </a>
 
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="./profile.html">Profile</a>
                             <a class="dropdown-item" href="./blog1.html">Logout</a>
                         </div>
                     </div>
@@ -88,65 +90,33 @@
     </nav>
 
     <div class="container">
-
-        <form class="border p-4 mt-5 mb-5 shadow bg-white rounded">
-            <div class="media mb-3">
-                <img class="mr-4 rounded-circle" src="https://source.unsplash.com/100x100/?user" alt="Profile">
-                <div class="media-body">
-                    <h5 class="mt-0 font-weight-bold">Phurba Gyalzen Sherpa</h5>
-                    <p class="font-weight-bold">sphurba861@gmail.com</p>
-                    <p>I am a college student.</p>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-12">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email"
-                        value="sphurba861@gmail.com">
-                </div>
-            </div>
-            <label for="exampleFormControlTextarea1">Bio</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">I am a college student.</textarea>
+        <form class="border p-4 m-3 shadow bg-white rounded" data-aos="fade-up">
+            <legend class="border-bottom mb-5 h3 text-info text-center font-weight-bold">WRITE A POST</legend>
             <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"
-                    value="1234 Main St">
+                <label for="formGroupExampleInput">Title *</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Title">
             </div>
             <div class="form-group">
-                <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"
-                    value="Apartment, studio, or floor">
+                <label for="formGroupExampleInput2">Description *</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Description">
             </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity" value="Kathmandu">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="inputState">Gender</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Male</option>
-                        <option>Female</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" value="4470" class="form-control" id="inputZip">
-                </div>
-            </div>
-
             <div class="form-group">
-                <label for="exampleFormControlFile1">Profile Picture</label>
+                <label for="exampleFormControlFile1">Thumbnail *</label>
                 <input type="file" class="form-control-file" id="exampleFormControlFile1">
             </div>
-            <a href="./blog2.html" class="btn btn-primary btn-block">UPDATE</a>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Content *</label>
+                <div id="editor" class="ck-editor__editable">
+                </div>
 
+
+            </div>
+            <a href="#" class="btn btn-outline-primary btn-block">
+                Post
+            </a>
         </form>
+
     </div>
-
-
-
 
     <a href="#" onclick="topFunction()"
         class="back-to-top animate__animated animate__bounce animate__infinite animate__slow hvr-pulse"><i
@@ -198,6 +168,11 @@
         $(window).on('load', function () {
             aos_init();
         });
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => {
+                console.error(error);
+            });
     </script>
 
 </body>

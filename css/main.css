@@ -91,3 +91,7 @@ h6 {
   position: absolute;
   left: 50%;
 }
+
+.ck-editor__editable {
+  min-height: 400px;
+}
