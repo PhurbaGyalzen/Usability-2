@@ -70,81 +70,78 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./admin.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="./displayusers.html">General User</a></li>
-                <li class="breadcrumb-item" area-current="page">Admin</li>
-                <li class="breadcrumb-item"><a href="./adduser.html">Add Users</a></li>
+                <li class="breadcrumb-item"><a href="./displayadmins.html">Admins</a></li>
+                <li class="breadcrumb-item" area-current="page">Add Users</li>
                 <li class="breadcrumb-item"><a href=#">Posts</a></li>
             </ol>
         </nav>
 
 
 
-        <div class="container mb-5">
-            <div class="row" data-aos="fade-up">
-                <div class="col-md-10 offset-md-1">
-                    <h1 class="text-center font-weight-bold mt-3">Admin Users</h1>
-                    <div class="card py-2 px-2">
-                        <table class="table">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th>Username</th>
-                                    <th>Email</th>
-                                    <th class="text-center">Functions</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr></tr>
-                                <td>Hari</td>
-                                <td>hari@gmail.com</td>
-                                <td class="text-center">
-                                    <a href="./admin.html" class="btn btn-danger btn-sm"
-                                        onclick="return confirm('Are you sure want to update hari as User?')">Set
-                                        to User</a>
-                                </td>
-                                </tr>
-                                <tr>
-                                    <td>Ram</td>
-                                    <td>ram@gmail.com</td>
-                                    <td class="text-center">
-                                        <a href="./admin.html" class="btn btn-danger btn-sm"
-                                            onclick="return confirm('Are you sure want to update ram as Admin?')">Set
-                                            to User</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Sita</td>
-                                    <td>sita@gmail.com</td>
-                                    <td class="text-center">
-                                        <a href="./admin.html" class="btn btn-danger btn-sm"
-                                            onclick="return confirm('Are you sure want to update sita as User?')">Set
-                                            to User</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Madav</td>
-                                    <td>madav@gmail.com</td>
-                                    <td class="text-center">
-                                        <a href="./admin.html" class="btn btn-danger btn-sm"
-                                            onclick="return confirm('Are you sure want to update madav as User?')">Set
-                                            to User</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Bikash</td>
-                                    <td>bikash@gmail.com</td>
-                                    <td class="text-center">
-                                        <a href="./admin.html" class="btn btn-danger btn-sm"
-                                            onclick="return confirm('Are you sure want to update bikash as User?')">Set
-                                            to User</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+        <div class="container" style="margin-top: 1rem;">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div data-aos="fade-left">
+                        <form class="mt-3 ml-md-5 border rounded p-4">
+                            <h1 class="font-weight-bold text-center">Add New User</h1>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4"
+                                        placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress2">Address 2</label>
+                                <input type="text" class="form-control" id="inputAddress2"
+                                    placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputGender">Gender</label>
+                                    <select id="inputGender" class="form-control">
+                                        <option selected>Male</option>
+                                        <option>Female</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputZip">Age</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Allow all terms and conditions
+                                    </label>
+                                </div>
+                            </div>
+                            <a href="./admin.html" class="btn btn-primary btn-lg btn-block text-white">Register</a>
+                        </form>
+
                     </div>
+
                 </div>
             </div>
+
         </div>
     </div>
+
 
 
 
