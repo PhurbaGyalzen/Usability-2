@@ -68,75 +68,78 @@
 
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item" area-current="page">Home</li>
+                <li class="breadcrumb-item"><a href="./admin.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="./displayusers.html">General User</a></li>
-                <li class="breadcrumb-item"><a href="./displayadmins.html">Admins</a></li>
+                <li class="breadcrumb-item" area-current="page">Admin</li>
                 <li class="breadcrumb-item"><a href="#">Add Users</a></li>
                 <li class="breadcrumb-item"><a href=#">Posts</a></li>
             </ol>
         </nav>
 
 
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <div class="jumbotron bg-dark" data-aos="fade-up" data-aos-duration="2000">
-                    <h1 class="display-5 text-white">Welcome, Gyalzen Sherpa!!!</h1>
-                    <p class="lead text-light">Admin dashboard lets you manage all the users or post and also provides
-                        some useful information about the this website here.</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
-                <dotlottie-player src="https://assets4.lottiefiles.com/dotlotties/dlf10_q0vtqaxf.lottie"
-                    background="transparent" speed="1" style="width: 500px; height: 400px;" loop autoplay>
-                </dotlottie-player>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col">
-                <div class="card text-white bg-secondary mb-3" style="max-width: 35rem;" data-aos="fade-right"
-                    data-aos-offset="100" data-aos-easing="ease-in-sine">
-                    <div class="card-header text-center">General Users</div>
-                    <div class="card-body">
-                        <a href="#">
-                            <h1 class="card-title text-center" data-toggle="counter-up">234</h1>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card text-white bg-danger mb-3" style="max-width: 35rem;" data-aos="fade-left"
-                    data-aos-offset="100" data-aos-easing="ease-in-sine">
-                    <div class="card-header text-center">Total Admins</div>
-                    <div class="card-body">
-                        <a href="#">
-                            <h1 class="card-title text-center" data-toggle="counter-up">320</h1>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="card text-white bg-info mb-3" style="max-width: 35rem;" data-aos="fade-right"
-                    data-aos-offset="150" data-aos-easing="ease-in-sine">
-                    <div class="card-header text-center">Total Posts</div>
-                    <div class="card-body">
-                        <a href="#">
-                            <h1 class="card-title text-center" data-toggle="counter-up">1245</h1>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card text-white bg-success mb-3" style="max-width: 35rem;" data-aos="fade-left"
-                    data-aos-offset="150" data-aos-easing="ease-in">
-                    <div class="card-header text-center">Total Users</div>
-                    <div class="card-body">
-                        <a href="#">
-                            <h1 class="card-title text-center" data-toggle="counter-up">100</h1>
-                        </a>
+        <div class="container mb-5">
+            <div class="row" data-aos="fade-up">
+                <div class="col-md-10 offset-md-1">
+                    <h1 class="text-center font-weight-bold mt-3">General Users</h1>
+                    <div class="card py-2 px-2">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th class="text-center">Functions</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr></tr>
+                                <td>Hari</td>
+                                <td>hari@gmail.com</td>
+                                <td class="text-center">
+                                    <a href="./admin.html" class="btn btn-danger btn-sm"
+                                        onclick="return confirm('Are you sure want to update hari as User?')">Set
+                                        to User</a>
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td>Ram</td>
+                                    <td>ram@gmail.com</td>
+                                    <td class="text-center">
+                                        <a href="./admin.html" class="btn btn-danger btn-sm"
+                                            onclick="return confirm('Are you sure want to update ram as Admin?')">Set
+                                            to User</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sita</td>
+                                    <td>sita@gmail.com</td>
+                                    <td class="text-center">
+                                        <a href="./admin.html" class="btn btn-danger btn-sm"
+                                            onclick="return confirm('Are you sure want to update sita as User?')">Set
+                                            to User</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Madav</td>
+                                    <td>madav@gmail.com</td>
+                                    <td class="text-center">
+                                        <a href="./admin.html" class="btn btn-danger btn-sm"
+                                            onclick="return confirm('Are you sure want to update madav as User?')">Set
+                                            to User</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bikash</td>
+                                    <td>bikash@gmail.com</td>
+                                    <td class="text-center">
+                                        <a href="./admin.html" class="btn btn-danger btn-sm"
+                                            onclick="return confirm('Are you sure want to update bikash as User?')">Set
+                                            to User</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

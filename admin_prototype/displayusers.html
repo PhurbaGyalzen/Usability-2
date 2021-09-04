@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Admin dashboard
+    </title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS Files -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" />
+
+    <!-- Favicons -->
+    <link href="./blog/img/favicon.png" rel="icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Hover.css -->
+    <link href="../user_prototype/Hover-master/css/hover-min.css" rel="stylesheet">
+
+    <link href="../user_prototype/blog/css/blog.css" rel="stylesheet">
+    <link rel="stylesheet" href="../user_prototype/css/main.css" type="text/css">
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container">
+
+            <a class="navbar-brand font-weight-bold animate__animated animate__rubberBand animate__slow"
+                href="./admin.html">Admin
+                Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link pl-md-4 hvr-bounce-in" href="./profile.html">PROFILE</a>
+                    <a class="nav-item nav-link pl-md-4 hvr-bounce-in" href="./index.html">LOGOUT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./admin.html">Home</a></li>
+                <li class="breadcrumb-item" area-current="page">General User</li>
+                <li class="breadcrumb-item"><a href="./displayadmins.html">Admins</a></li>
+                <li class="breadcrumb-item"><a href="#">Add Users</a></li>
+                <li class="breadcrumb-item"><a href=#">Posts</a></li>
+            </ol>
+        </nav>
+
+
+
+        <div class="container mb-5">
+            <div class="row" data-aos="fade-up">
+                <div class="col-md-10 offset-md-1">
+                    <h1 class="text-center font-weight-bold mt-3">General Users</h1>
+                    <div class="card py-2 px-2">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th colspan="2" class="text-center">Functions</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hari</td>
+                                    <td>hari@gmail.com</td>
+                                    <td>
+                                        <a href="./admin.html" class="btn btn-secondary ml-md-4 btn-sm"
+                                            onclick="return confirm('Are you sure want to update hari as Admin?')">Set
+                                            to Admin</a>
+                                    </td>
+                                    <td>
+                                        <a href="./admin.html" class="btn btn-danger btn-sm"
+                                            onclick="return confirm('Are you sure want to delete hari?')">Delete
+                                            User</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ram</td>
+                                    <td>ram@gmail.com</td>
+                                    <td>
+                                        <a href="./admin.html" class="btn btn-secondary ml-md-4 btn-sm"
+                                            onclick="return confirm('Are you sure want to update ram as Admin?')">Set
+                                            to Admin</a>
+                                    </td>
+                                    <td>
+                                        <a href="./admin.html" class="btn btn-danger btn-sm"
+                                            onclick="return confirm('Are you sure want to delete ram?')">Delete
+                                            User</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sita</td>
+                                    <td>sita@gmail.com</td>
+                                    <td>
+                                        <a href="./admin.html" class="btn btn-secondary ml-md-4 btn-sm"
+                                            onclick="return confirm('Are you sure want to update sita as Admin?')">Set
+                                            to Admin</a>
+                                    </td>
+                                    <td>
+                                        <a href="./admin.html" class="btn btn-danger btn-sm"
+                                            onclick="return confirm('Are you sure want to delete sita?')">Delete
+                                            User</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Madav</td>
+                                    <td>madav@gmail.com</td>
+                                    <td>
+                                        <a href="./admin.html" class="btn btn-secondary ml-md-4 btn-sm"
+                                            onclick="return confirm('Are you sure want to update madav as Admin?')">Set
+                                            to Admin</a>
+                                    </td>
+                                    <td>
+                                        <a href="./admin.html" class="btn btn-danger btn-sm"
+                                            onclick="return confirm('Are you sure want to delete madav?')">Delete
+                                            User</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bikash</td>
+                                    <td>bikash@gmail.com</td>
+                                    <td>
+                                        <a href="./admin.html" class="btn btn-secondary ml-md-4 btn-sm"
+                                            onclick="return confirm('Are you sure want to update bikash as Admin?')">Set
+                                            to Admin</a>
+                                    </td>
+                                    <td>
+                                        <a href="./admin.html" class="btn btn-danger btn-sm"
+                                            onclick="return confirm('Are you sure want to delete bikash?')">Delete
+                                            User</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <a href="#" onclick="topFunction()"
+        class="back-to-top animate__animated animate__bounce animate__infinite animate__slow hvr-pulse"><i
+            class="fa fa-chevron-up"></i></a>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>THE XLOG</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed and Developed by <a target="_blank" href="https://github.com/PhurbaGyalzen">Phurba Gyalzen
+                    Sherpa</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <script src="../user_prototype/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../user_prototype/blog/js/jquery.easing.min.js"></script>
+    <script src="../user_prototype/blog/js/jquery.waypoints.min.js"></script>
+    <script src="../user_prototype/blog/js/counterup.min.js"></script>
+
+
+    <!-- Blog JS File -->
+    <script src="../user_prototype/blog/js/blog.js"></script>
+    <script>
+        // Init AOS
+        function aos_init() {
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        }
+        $(window).on('load', function () {
+            aos_init();
+        });
+
+        $('[data-toggle="counter-up"]').counterUp({
+            delay: 30,
+            time: 1000
+        });
+    </script>
+
+</body>
+
+</html>
